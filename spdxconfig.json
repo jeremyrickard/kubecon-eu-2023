@@ -1,0 +1,42 @@
+{
+    "store": {
+        "version": "1.0.0",
+        "plugins": [
+            {
+                "name": "oras",
+                "localCachePath": "./local_oras_cache"
+            }
+        ]
+    },
+    "policy": {
+        "version": "1.0.0",
+        "plugin": {
+            "name": "configPolicy",
+            "artifactVerificationPolicies": {
+                "text/spdx": "all"
+            }
+        }
+    },
+    "verifier": {
+        "version": "1.0.0",
+        "plugins": [
+            {
+                "name": "licensechecker",
+                "artifactTypes": "text/spdx",
+                "allowedLicenses": [
+                    "Apache-2.0",
+		    "MIT",
+                    "OpenSSL",
+                    "BSD-2-Clause AND BSD-3-Clause",
+                    "BSD-3-Clause",
+		    "Zlib",
+                    "MPL-2.0 AND MIT",
+                    "ISC",
+		    "NOASSERTION"
+                ]
+            }
+
+        ]
+
+    }
+}

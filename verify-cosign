@@ -1,0 +1,1 @@
+~/.ratify/ratify verify -c ~/projects/kubecon-eu-2023/cosign.json -s kubeconeu.azurecr.io/demo-app:sha-d0992af7eb825e7ba03fd777016073c3765a1c30
